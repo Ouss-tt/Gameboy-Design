@@ -73,3 +73,11 @@ const gameData = [
         ]
     },
 ]
+
+// DOM Elements
+const questionElement = document.querySelector('.question');
+const buttons = document.querySelectorAll('.button');
+const nextFrame = document.querySelector('.next-frame');
+const answer1Element = document.querySelector('.anwser-1');
+const answer2Element = document.querySelector('.anwser-2');
+const answer3Element = document.querySelector('.anwser-3');
