@@ -330,3 +330,80 @@ body{
   align-items: center;
   justify-content: center;
 }
+
+.next-button {
+    background: #cec9c2;
+    border-radius: 35.97px;
+    padding: 7.19px 7px 7.19px 7px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+    box-shadow: inset 0px 3px 0px 0px rgba(0, 0, 0, 0.16);
+  }
+  .next-frame {
+    cursor: pointer;
+    background: #aa2166;
+    border-radius: 50px;
+    border-style: solid;
+    border-color: #591433;
+    border-width: 1px;
+    padding: 0px 0px 5px 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 154px;
+    height: 51px;
+    position: relative;
+    box-shadow: inset 0px -4px 0px 0px rgba(70, 22, 46, 0.76),
+      inset 0px -6px 0px 0px rgba(255, 116, 186, 0.29),
+      0px 3px 0px 0px rgba(0, 0, 0, 0.33);
+  }
+  .next-frame:active{
+    background: #761244;
+    border-radius: 50px;
+    border-style: solid;
+    border-color: #591433;
+    border-width: 1px;
+    padding: 0px 0px 5px 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 154px;
+    height: 51px;
+    position: relative;
+    box-shadow: inset 0px 6px 0px 0px rgba(69, 14, 42, 1),
+      0px 3px 0px 0px rgba(0, 0, 0, 0);
+  }
+  .next {
+    color: #ffffff;
+    text-align: center;
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .next:active{
+    color: #ddc2c2;
+    text-align: center;
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
