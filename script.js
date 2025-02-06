@@ -107,3 +107,21 @@ function loadQuestion(index) {
 
     selectedAnswerIndex = null;
 }
+
+// Setup Event Listeners
+function setupEventListeners() {
+    buttons.forEach((button, index) => {
+        button.addEventListener('click', () => selectAnswer(index));
+    });
+
+    nextFrame.addEventListener('click', () => {
+        if (selectedAnswerIndex === null) {
+            questionElement.textContent = "Please select an answer first!";
+            setTimeout(() => {
+                questionElement.textContent = gameData[currentQuestionIndex].question;
+            }, 1000);
+        } else {
+            moveToNextQuestion();
+        }
+    });
+}
