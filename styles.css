@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #c0bdc2;
+    font-family: var(--main-font);
+}
+
+.full-body,
+.full-body * {
+  box-sizing: border-box;
+}
+.full-body {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  height: 917px;
+  position: relative;
+}
