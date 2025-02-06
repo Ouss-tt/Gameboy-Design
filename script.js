@@ -142,3 +142,18 @@ function selectAnswer(index) {
     const message = gameData[currentQuestionIndex].answers[index].message;
     questionElement.textContent = message;
 }
+
+// Move to Next Question
+function moveToNextQuestion() {
+    if (currentQuestionIndex < gameData.length - 1) {
+        currentQuestionIndex++;
+        loadQuestion(currentQuestionIndex);
+    } else {
+        questionElement.textContent = "Game Complete!";
+        buttons.forEach(btn => btn.style.pointerEvents = 'none');
+        nextFrame.style.display = 'none';
+    }
+}
+
+// Start the game when the page loads
+document.addEventListener('DOMContentLoaded', initGame);
