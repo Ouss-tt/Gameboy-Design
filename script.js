@@ -85,3 +85,9 @@ const answer3Element = document.querySelector('.anwser-3');
 // Game State
 let currentQuestionIndex = 0;
 let selectedAnswerIndex = null;
+
+// Initialize Game
+function initGame() {
+    loadQuestion(currentQuestionIndex);
+    setupEventListeners();
+}
