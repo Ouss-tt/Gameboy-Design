@@ -91,3 +91,19 @@ function initGame() {
     loadQuestion(currentQuestionIndex);
     setupEventListeners();
 }
+
+// Load Question
+function loadQuestion(index) {
+    questionElement.textContent = gameData[index].question;
+    
+    answer1Element.textContent = gameData[index].answers[0].text;
+    answer2Element.textContent = gameData[index].answers[1].text;
+    answer3Element.textContent = gameData[index].answers[2].text;
+    
+    buttons.forEach(button => {
+        button.classList.remove('selected');
+        button.style.pointerEvents = 'auto';
+    });
+
+    selectedAnswerIndex = null;
+}
