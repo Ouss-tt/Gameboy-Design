@@ -125,3 +125,20 @@ function setupEventListeners() {
         }
     });
 }
+
+// Select Answer
+function selectAnswer(index) {
+    if (selectedAnswerIndex !== null) return;
+
+    buttons.forEach((btn, i) => {
+        if (i === index) {
+            btn.classList.add('selected');
+        }
+        btn.style.pointerEvents = 'none';
+    });
+    
+    selectedAnswerIndex = index;
+
+    const message = gameData[currentQuestionIndex].answers[index].message;
+    questionElement.textContent = message;
+}
