@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Courier';
+    src: url('Courier\ Prime.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+:root {
+    --main-font: 'Courier', sans-serif;
+}
 body{
     margin: 0;
     padding: 0;
