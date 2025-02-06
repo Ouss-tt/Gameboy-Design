@@ -407,3 +407,38 @@ body{
     align-items: center;
     justify-content: center;
   }
+
+
+.speakers {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 41px;
+  height: 43px;
+  position: absolute;
+  left: calc(50% - -111.01px);
+  bottom: 22.8px;
+  transform-origin: 0 0;
+  transform: rotate(-45deg) scale(1, 1);
+  object-fit: cover;
+}
+.phone {
+  background: #7b7b7b;
+  border-radius: 35.97px;
+  padding: 4px 12px 4px 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 46px;
+  height: 8px;
+  position: absolute;
+  left: calc(50% - 84.5px);
+  bottom: 18px;
+  box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.24);
+}
